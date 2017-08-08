@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeNavigationView" customModule="ParallaxScrollingLikeContactsInIphone" customModuleProvider="target">
+            <connections>
+                <outlet property="mContentView" destination="iN0-l3-epB" id="Jd7-ZX-0bR"/>
+                <outlet property="mHeightOfImageBackgroundView" destination="4Yy-Z4-igm" id="qo0-ZF-hCb"/>
+                <outlet property="mImageBackgroundView" destination="hib-Mp-lNz" id="FuZ-VJ-h43"/>
+                <outlet property="mSchoolLogoImageView" destination="t8x-hk-Kl8" id="eOY-wB-lM8"/>
+                <outlet property="mSchoolNameLabel" destination="gHc-fY-L9L" id="Avr-o7-73q"/>
+                <outlet property="mTitleLabel" destination="q50-9z-h7b" id="sSG-Uf-iiv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEN-10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q50-9z-h7b">
+                    <rect key="frame" x="158" y="8" width="59.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hib-Mp-lNz">
+                    <rect key="frame" x="0.0" y="55.5" width="375" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="t8x-hk-Kl8">
+                            <rect key="frame" x="87.5" y="0.0" width="200" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="t8x-hk-Kl8" secondAttribute="height" multiplier="2:1" id="M0j-Gy-p1a"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="4Yy-Z4-igm"/>
+                        <constraint firstItem="t8x-hk-Kl8" firstAttribute="centerX" secondItem="hib-Mp-lNz" secondAttribute="centerX" id="K1J-YZ-gCE"/>
+                        <constraint firstItem="t8x-hk-Kl8" firstAttribute="centerY" secondItem="hib-Mp-lNz" secondAttribute="centerY" id="ffM-Yy-ndZ"/>
+                        <constraint firstItem="t8x-hk-Kl8" firstAttribute="height" secondItem="hib-Mp-lNz" secondAttribute="height" id="sNP-3F-pAF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHc-fY-L9L">
+                    <rect key="frame" x="161.5" y="181.5" width="52.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.39215686274509803" green="0.58431372549019611" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gHc-fY-L9L" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7eT-yI-jJX"/>
+                <constraint firstItem="hib-Mp-lNz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DAZ-Hl-AHF"/>
+                <constraint firstItem="hib-Mp-lNz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DmU-hZ-JG0"/>
+                <constraint firstItem="q50-9z-h7b" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fdc-Id-5qp"/>
+                <constraint firstItem="q50-9z-h7b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Srd-h7-Zm6"/>
+                <constraint firstItem="hib-Mp-lNz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VUA-Pf-nME"/>
+                <constraint firstItem="gHc-fY-L9L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Vze-vb-GMB"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gHc-fY-L9L" secondAttribute="trailing" constant="8" id="bNg-u3-zMt"/>
+                <constraint firstAttribute="trailing" secondItem="hib-Mp-lNz" secondAttribute="trailing" id="k9e-R1-GCk"/>
+                <constraint firstAttribute="bottom" secondItem="gHc-fY-L9L" secondAttribute="bottom" constant="8" id="nho-Kz-fLn"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="q50-9z-h7b" secondAttribute="trailing" constant="5" id="vUS-Zc-nA1"/>
+                <constraint firstItem="q50-9z-h7b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="z8u-wV-ur7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="31.5" y="190"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple" width="800" height="400"/>
+    </resources>
+</document>
